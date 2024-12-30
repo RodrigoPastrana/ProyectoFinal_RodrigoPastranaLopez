@@ -1,0 +1,101 @@
+/* Estilo general para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/fondo_proyecto_JavaScript.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    height: 100vh;
+    color: #fff;
+    overflow-y: auto;
+}
+
+/* Contenedor principal del fixture */
+#fixture {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%; /* Reducir el tamaño del fixture */
+    max-width: 800px; /* Limitar el tamaño máximo */
+    text-align: center;
+    box-sizing: border-box;
+    overflow-y: auto; /* Añadir para permitir desplazamiento si es necesario */
+    position: relative;
+    top: 20px; /* Aseguramos que haya un espacio desde la parte superior */
+    margin: 0 auto; /* Centrar horizontalmente */
+}
+
+/* Título del fixture */
+#fixture h1, .fecha {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Estilo para los partidos */
+.partido {
+    font-size: 1.5em;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    color: #fff;
+}
+
+/* Estilo para los botones de "Crear Liga" y otros */
+button {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #cc5200;
+}
+
+/* Contenedor de los botones */
+button:focus {
+    outline: none;
+}
+
+button + button {
+    margin-left: 20px;
+}
+
+/* Responsividad */
+@media screen and (max-width: 600px) {
+    #fixture {
+        width: 90%;
+    }
+
+    .partido {
+        font-size: 1.2em;
+    }
+
+    button {
+        font-size: 1em;
+        padding: 8px 15px;
+    }
+}
+
+/* Centrado de los botones debajo del fixture */
+#fixture button {
+    display: block;
+    margin: 20px auto;
+}
+
+/* Añadir un margen superior para evitar que el fixture se vea cortado */
+.container {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px; /* Ajusta este valor según lo necesites */
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liga de Equipos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Bienvenido al creador de ligas de fútbol</h1>
+        <div class="input-container">
+            <form id="ligaForm">
+                <input type="text" id="nombreLiga" placeholder="Nombre de la Liga" required>
+                <input type="number" id="cantidadEquipos" placeholder="Cantidad de Equipos" min="2" required>
+                <button type="submit">Crear Liga</button>
+            </form>
+        </div>
+        <div id="equiposForm" class="hidden">
+            <h2>Introduce los nombres de los equipos:</h2>
+            <div id="equiposInputs"></div>
+            <button id="generarFixture">Generar Fixture</button>
+        </div>
+        <div id="fixture" class="fixture"></div>
+        <div id="buscarPartidosForm" class="hidden">
+            <h2>Buscar partidos de un equipo específico:</h2>
+            <form id="buscarPartidos">
+                <input type="text" id="equipoBuscar" placeholder="Nombre del equipo" required>
+                <button type="submit">Buscar</button>
+            </form>
+            <div id="resultadosBusqueda"></div>
+        </div>
+    </div>
+    <script src="js/ligaFutbol.js"></script>
+</body>
+</html>
